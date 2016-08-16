@@ -1,0 +1,39 @@
+server:
+  port: 8088
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+zuul:
+  ignored-services: "*"
+  routes:
+   api-client:
+     path: /api-client/**
+     serviceId: cloud-client-thrift
+   api-resource-server:
+     path: /api-resource-server/**
+     serviceId: cloud-oauth2-resource-server
+   api-oauth2-server:
+     path: /api-oauth2-server/**
+     serviceId: cloud-oauth2-server
+   user:
+     path: /user/**
+     url: http://localhost:8081/user
+
+
+
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://localhost:8081/oauth/token
+      userAuthorizationUri: http://localhost:8081/oauth/authorize
+      clientId: app50jia
+      clientSecret: 50jia123456
+      authorized-grant-types: authorization_code,refresh_token,password
+    resource:
+      userInfoUri: http://localhost:8081/user
+

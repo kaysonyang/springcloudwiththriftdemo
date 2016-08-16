@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudWithThriftComm.iml" filepath="$PROJECT_DIR$/SpringCloudWithThriftComm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-config-server/cloud-config-server.iml" filepath="$PROJECT_DIR$/cloud-config-server/cloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-oauth2-resource-server/cloud-oauth2-resource-server.iml" filepath="$PROJECT_DIR$/cloud-oauth2-resource-server/cloud-oauth2-resource-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-oauth2-server/cloud-oauth2-server.iml" filepath="$PROJECT_DIR$/cloud-oauth2-server/cloud-oauth2-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-thrift-client/cloud-thrift-client.iml" filepath="$PROJECT_DIR$/cloud-thrift-client/cloud-thrift-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-thrift-interface/cloud-thrift-interface.iml" filepath="$PROJECT_DIR$/cloud-thrift-interface/cloud-thrift-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-thrift-server/cloud-thrift-server.iml" filepath="$PROJECT_DIR$/cloud-thrift-server/cloud-thrift-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+    </modules>
+  </component>
+</project>
