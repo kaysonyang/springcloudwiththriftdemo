@@ -1,0 +1,6 @@
+FROM java:8-jre-alpine
+VOLUME /tmp
+ADD cloud-oauth2-server-0.1.0.jar app.jar
+EXPOSE 8081
+RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
